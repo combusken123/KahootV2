@@ -6,11 +6,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #363636;
+  height: 200vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  flex-direction: column;
+  position: relative;
+  top: 60%;
+  height: 50vh;
+  width: 100vw;
 }
 
 code {
@@ -29,4 +38,15 @@ code {
 
 .inp {
   margin-bottom: 50px;
+}
+
+.kiframe {
+  position: absolute;
+  z-index: 40000;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: none;
+  
 }

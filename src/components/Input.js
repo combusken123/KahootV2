@@ -64,6 +64,7 @@ class Input extends React.Component {
       .then(res => {
         this.setState({ open: true });
         console.log(res);
+        window.location.href = 'https://kahootv2.combusken.repl.co#kahoot';
       })
       .catch(err => {
         console.log(err);
